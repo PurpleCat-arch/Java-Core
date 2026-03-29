@@ -1,25 +1,15 @@
-
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("----FOR LOOP----");
-        for(int i=1;i<=5;i++){
-            System.out.println(i+" ");
-        }
-
-        System.out.println("----WHILE LOOP----");
-        int j=1;
-        while(j<=5){
-            System.out.println(j+" ");
-            j++;
-        }
-
-        System.out.println("----DO-WHILE LOOP----");
-        int k=1;
-        do { 
-            System.out.println(k+" ");
-            k++;
-        } while (k<=5);
+class Adder{
+    int add(int a,int b){
+        return a+b;
     }
-    
+    int add(int a,int b, int c){
+        return a+b+c;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Adder a = new Adder();
+        System.out.println(a.add(11,11));
+        System.out.println(a.add(11,11,11));
+    }
 }
