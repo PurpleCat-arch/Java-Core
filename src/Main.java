@@ -1,15 +1,22 @@
-class Adder{
-    int add(int a,int b){
-        return a+b;
+interface camera{
+    void takePhoto();
+}
+interface MusicPlayer{
+    void playMusic();
+}
+class SmartPhone implements Camera,MusicPlayer{
+    public void takePhoto(){
+        System.out.println("photo taken");
     }
-    int add(int a,int b, int c){
-        return a+b+c;
+    @Override
+    public void playMusic(){
+        System.out.println("Music playing");
     }
 }
 public class Main{
     public static void main(String[] args){
-        Adder a = new Adder();
-        System.out.println(a.add(11,11));
-        System.out.println(a.add(11,11,11));
+        SmartPhone sp = new SmartPhone();
+        sp.takePhoto();
+        sp.playMusic();
     }
 }
