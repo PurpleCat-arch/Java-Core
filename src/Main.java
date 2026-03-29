@@ -1,22 +1,23 @@
-interface camera{
-    void takePhoto();
+
+interface car{
+    void drive();
 }
-interface MusicPlayer{
-    void playMusic();
+interface Airplane{
+    void fly();
 }
-class SmartPhone implements Camera,MusicPlayer{
-    public void takePhoto(){
-        System.out.println("photo taken");
+class FlyingCar implements Car,Airplane{
+    public void drive(){
+        System.out.println("Driving on road");
     }
     @Override
-    public void playMusic(){
-        System.out.println("Music playing");
+    public void fly(){
+        System.out.println("Flying in sky");
     }
 }
 public class Main{
     public static void main(String[] args){
-        SmartPhone sp = new SmartPhone();
-        sp.takePhoto();
-        sp.playMusic();
+        FlyingCar fc = new FlyingCar();
+        fc.drive();
+        fc.fly();
     }
 }
