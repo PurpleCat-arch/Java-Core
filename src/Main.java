@@ -1,23 +1,20 @@
-
-interface car{
-    void drive();
-}
-interface Airplane{
-    void fly();
-}
-class FlyingCar implements Car,Airplane{
-    public void drive(){
-        System.out.println("Driving on road");
+class Main {
+    public int[] twoSum(int[] nums,int target){
+        for(int i=0;i<nums.length;i++){
+            for (int j=i+1;j<nums.length;j++){
+                if(nums[i]+nums[j]==target){
+                    return new int[]{i, j};
+                }
+            }
+        }
+        return new int[]{};
     }
-    @Override
-    public void fly(){
-        System.out.println("Flying in sky");
-    }
-}
-public class Main{
     public static void main(String[] args){
-        FlyingCar fc = new FlyingCar();
-        fc.drive();
-        fc.fly();
+        Main main = new Main();
+        int[] nums = new int[]{3,4,5,6,7,8,9};
+        int target =9;
+        int[] result = main.twoSum(nums, target);
+        System.out.println("[" + result[0] + ", " + result[1]+"]");
+
     }
 }
