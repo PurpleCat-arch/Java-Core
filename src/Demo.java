@@ -1,31 +1,19 @@
-class Calc{
-    public int add(int a,int b){
-        return a+b;
-    }
-    public int sub(int a,int b){
-        return a-b;
-    }
-}
-class AdvCalc extends Calc{
-    public int multiply(int a,int b){
-        return a*b;
-    }
-    public int divide(int a,int b){
-        return a/b;
+class Laptop {
+    String model;
+    int price;
+    String color;   
+    public String toString(){
+        return "model: "+model+" price: "+price+" color: "+color;
     }
 }
-class SuperCalc extends AdvCalc{
-    public int power(int a,int b){
-        return (int) Math.pow(a,b);
-    }
-}
-public class Demo{
-    public static void main(String[] args){
-        SuperCalc sc = new SuperCalc();
-        System.out.println("Addition: "+sc.add(10,5));
-        System.out.println("Subtraction: "+sc.sub(10,5));
-        System.out.println("Multiplication: "+sc.multiply(10,5));
-        System.out.println("Division: "+sc.divide(10,5));
-        System.out.println("Power: "+sc.power(2,3));    
+
+class Demo{
+    public static void main(String[] args) {
+        Laptop obj = new Laptop();
+        obj.model = "Lenovo";
+        obj.price = 150000;
+        obj.color = "Grey";
+        System.out.println(obj);
+        
     }
 }
