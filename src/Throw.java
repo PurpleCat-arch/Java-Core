@@ -1,21 +1,13 @@
-import java.io.IOException;
-class Throw {
-    void m() throws IOException {
-        throw new IOException("device error");
-    }
-    void n() throws IOException {
-        m();
-    }
-    void p() {
-        try {
-            n();
-        } catch (Exception e) {
-            System.out.println("exception handled");
+public class Throw {
+    static void fun(int age) {
+        if (age < 18) {
+            throw new ArithmeticException("Access denied");
+        } else {
+            System.out.println("Access granted");
         }
     }
-    public static void main(String args[]) {
-        Throw obj = new Throw();
-        obj.p();
-        System.out.println("normal flow...");
+    public static void main(String[] args) {
+        fun(18);
+        System.out.println("rest of the code...");
     }
 }
