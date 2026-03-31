@@ -1,10 +1,9 @@
-public class Demo{
-    public static void main(String[] args){
+public class Demo {
+    public static void main(String[] args) {
         try {
-            @SuppressWarnings("unused")
-            int data  = 100 / 0;
+            int a = 10 / 0;
         } catch (ArithmeticException e) {
-            System.out.println("Error: Division by zero is not allowed.");
+            System.out.println("Cannot divide by zero: " + e.getMessage());
         }
     }
 }
