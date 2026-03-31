@@ -1,9 +1,17 @@
 public class Demo {
     public static void main(String[] args) {
         try {
-            int a = 10 / 0;
-        } catch (ArithmeticException e) {
-            System.out.println("Cannot divide by zero: " + e.getMessage());
+            int a[] = new int[5]; 
+            a[5] = 30 / 0;
+        }
+        catch (ArithmeticException e) {
+            System.out.println("ArithmeticException");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException");
+        }
+         catch (Exception e) {
+            System.out.println("Exception");
         }
     }
 }
