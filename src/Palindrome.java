@@ -1,15 +1,16 @@
 public class Palindrome {
     public static void main(String[] args) {
-        String str = "madam";
-        String rev = "";
+        int num = 121;
+        int original = num;
+        int rev = 0;
 
-        // reverse string
-        for (int i = str.length() - 1; i >= 0; i--) {
-            rev += str.charAt(i);
+        while (num > 0) {
+            int digit = num % 10;
+            rev = rev * 10 + digit;
+            num = num / 10;
         }
 
-        // check
-        if (str.equals(rev)) {
+        if (original == rev) {
             System.out.println("Palindrome");
         } else {
             System.out.println("Not Palindrome");
