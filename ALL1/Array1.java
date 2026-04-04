@@ -11,7 +11,7 @@ public class Array1 {
         arr[arr.length - 1] = first;
 
         for (int num : arr)
-            System.out.print(num + " "); 
+            System.out.print(num + " ");
         
     }
 }
