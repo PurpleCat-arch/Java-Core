@@ -31,6 +31,15 @@ class Studs3{
             return "F";
         }
     }
+    void display(){
+        System.out.println("ID: "+id);
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
+        System.out.println("Total Marks: "+totmarks);
+        System.out.println("Marks1: "+marks1);
+        System.out.println("Marks2: "+marks2);
+        System.out.println("Grade: "+calGrade());
+    }
 }
 public class Student3 {
     public static void main(String[] args) {
