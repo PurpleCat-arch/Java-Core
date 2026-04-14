@@ -77,7 +77,14 @@ public class Student3 {
         int totmarks = marks1 + marks2;  
 
         studs[count++] = new Studs3(id, name, age, totmarks, marks1, marks2);
+    
     }
+
+    static void displayStudents() {
+    for (int i = 0; i < count; i++) {
+        studs[i].display();
+    }
+}
 
     public static void main(String[] args) {
     }
