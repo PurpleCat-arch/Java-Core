@@ -42,6 +42,8 @@ class Studs3{
     }
 }
 public class Student3 {
+    static Studs3[] studs = new Studs3[100];
+    static int count =0;
     public static void main(String[] args) {
     }
 }
