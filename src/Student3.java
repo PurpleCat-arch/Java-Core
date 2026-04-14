@@ -1,4 +1,8 @@
+
+import java.util.Scanner;
+
 class Studs3{
+
     int id;
     String name;
     int age;
@@ -7,14 +11,18 @@ class Studs3{
     int marks2;
 
     Studs3(int id, String name, int age, int totmarks, int marks1, int marks2){
+        
         this.id=id;
         this.name=name;
         this.age=age;
         this.totmarks=totmarks;
         this.marks1=marks1;
         this.marks2=marks2;
+
     }
-    String calGrade(){
+     
+    String calGrade() {
+
         if(totmarks>=90){
             return "A";
         }
@@ -30,8 +38,10 @@ class Studs3{
         else{
             return "F";
         }
+
     }
-    void display(){
+
+    void display() {
         System.out.println("ID: "+id);
         System.out.println("Name: "+name);
         System.out.println("Age: "+age);
@@ -41,9 +51,34 @@ class Studs3{
         System.out.println("Grade: "+calGrade());
     }
 }
+
 public class Student3 {
     static Studs3[] studs = new Studs3[100];
     static int count =0;
+    public static void addstudent(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter ID: ");
+        int id = sc.nextInt();
+
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Enter Age: ");
+        int age = sc.nextInt();
+
+        System.out.println("Enter Marks1:");
+        int marks1 = sc.nextInt();
+
+        System.out.println("Enter Marks2:");
+        int marks2 = sc.nextInt();
+
+        System.out.print("Enter Marks: ");
+        int totmarks = marks1 + marks2;  
+
+        studs[count++] = new Studs3(id, name, age, totmarks, marks1, marks2);
+    }
+
     public static void main(String[] args) {
     }
 }
