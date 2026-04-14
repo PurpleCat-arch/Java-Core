@@ -14,6 +14,23 @@ class Studs3{
         this.marks1=marks1;
         this.marks2=marks2;
     }
+    String calGrade(){
+        if(totmarks>=90){
+            return "A";
+        }
+        else if(totmarks>=80){
+            return "B";
+        }
+        else if(totmarks>=70){
+            return "C";
+        }
+        else if(totmarks>=60){
+            return "D";
+        }
+        else{
+            return "F";
+        }
+    }
 }
 public class Student3 {
     public static void main(String[] args) {
