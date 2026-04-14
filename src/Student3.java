@@ -112,6 +112,18 @@ public class Student3 {
     }
     }
 
+    static void deleteStudent(int id) {
+    for (int i = 0; i < count; i++) {
+        if (studs[i].id == id) {
+            for (int j = i; j < count - 1; j++) {
+                studs[j] = studs[j + 1];
+            }
+            count--;
+            return;
+        }
+    }
+   }
+
     public static void main(String[] args) {
     }
 }
