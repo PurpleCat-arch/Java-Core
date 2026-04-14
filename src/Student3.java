@@ -96,6 +96,22 @@ public class Student3 {
         System.out.println("Not found");
     }
 
+    static void updateStudent(int id) {
+    Scanner sc = new Scanner(System.in);
+
+    for (int i = 0; i < count; i++) {
+        if (studs[i].id == id) {
+           // sc.nextLine();
+            System.out.print("New Name: ");
+            studs[i].name = sc.nextLine();
+
+            System.out.print("New Marks: ");
+            studs[i].totmarks = sc.nextInt();
+            return;
+        }
+    }
+    }
+
     public static void main(String[] args) {
     }
 }
