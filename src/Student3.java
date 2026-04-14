@@ -81,10 +81,20 @@ public class Student3 {
     }
 
     static void displayStudents() {
-    for (int i = 0; i < count; i++) {
-        studs[i].display();
+        for (int i = 0; i < count; i++) {
+            studs[i].display();
+        }
     }
-}
+
+    static void searchStudent(int id) {
+        for (int i = 0; i < count; i++) {
+            if (studs[i].id == id) {
+                studs[i].display();
+                return;
+            }
+        }
+        System.out.println("Not found");
+    }
 
     public static void main(String[] args) {
     }
