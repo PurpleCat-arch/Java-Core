@@ -55,11 +55,12 @@ class Studs3{
 public class Student3 {
     static Studs3[] studs = new Studs3[100];
     static int count =0;
-    public static void addstudent(){
+    public static void addStudent(){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter ID: ");
         int id = sc.nextInt();
+        sc.nextLine();
 
         System.out.print("Enter Name: ");
         String name = sc.nextLine();
@@ -125,5 +126,31 @@ public class Student3 {
    }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("\n1.Add 2.Display 3.Search 4.Update 5.Delete 6.Exit");
+            int ch = sc.nextInt();
+
+            switch (ch) {
+                case 1 -> addStudent();
+                case 2 -> displayStudents();
+                case 3 -> {
+                    System.out.print("Enter ID: ");
+                    searchStudent(sc.nextInt());
+                }
+                case 4 -> {
+                    System.out.print("Enter ID: ");
+                    updateStudent(sc.nextInt());
+                }
+                case 5 -> {
+                    System.out.print("Enter ID: ");
+                    deleteStudent(sc.nextInt());
+                }
+                case 6 -> {
+                    return;
+                }
+            }
+        }
     }
 }
