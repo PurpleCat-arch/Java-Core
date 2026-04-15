@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Account1 {
     private int accNo;
     private String name;
@@ -59,8 +61,28 @@ class Account1 {
     }
 }
 public  class Account{
-    static Account[] accounts = new Account[100];
+    static Account1[] accounts = new Account1[100];
     static int count = 0;
+
+    static void createAccount(Scanner sc) {
+    System.out.print("Enter Account No: ");
+    int accNo = sc.nextInt();
+    sc.nextLine();
+
+    System.out.print("Enter Name: ");
+    String name = sc.nextLine();
+
+    System.out.print("Enter Initial Balance: ");
+    double balance = sc.nextDouble();
+
+    if (balance < 0) {
+        System.out.println("Invalid balance!");
+        return;
+    }
+
+    accounts[count++] = new Account1(accNo, name, balance);
+    System.out.println("Account Created!");
+    }
     public static void main(String[] args) {
         
     }
