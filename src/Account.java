@@ -8,6 +8,19 @@ public class Account {
     this.name = name;
     this.balance = balance;
     }
+
+    int getAccNo() {
+        return accNo;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    double getBalance() {
+        return balance;
+    }
+
     
     public static void main(String[] args) {
         
