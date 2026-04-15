@@ -52,6 +52,12 @@ public class Account {
         System.out.println(history);
     }
 
+    void display() {
+    System.out.println("Account No: " + accNo);
+    System.out.println("Name: " + name);
+    System.out.println("Balance: " + balance);
+    }
+
     
     public static void main(String[] args) {
         
