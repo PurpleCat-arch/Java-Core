@@ -21,6 +21,15 @@ public class Account {
         return balance;
     }
 
+    void deposit(double amount) {
+    if (amount > 0) {
+        balance += amount;
+        System.out.println("Deposited: " + amount);
+    } else {
+        System.out.println("Invalid amount!");
+    }
+    }
+
     
     public static void main(String[] args) {
         
