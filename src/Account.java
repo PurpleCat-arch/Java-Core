@@ -122,6 +122,19 @@ public  class Account{
         System.out.println("Account not found!");
     }
     }
+
+    static void checkBalance(Scanner sc) {
+    System.out.print("Enter Account No: ");
+    int accNo = sc.nextInt();
+
+    Account1 acc = findAccount(accNo);
+    if (acc != null) {
+        System.out.println("Balance: " + acc.getBalance());
+        acc.showHistory();
+    } else {
+        System.out.println("Account not found!");
+    }
+    }
     
     public static void main(String[] args) {
         
