@@ -83,6 +83,15 @@ public  class Account{
     accounts[count++] = new Account1(accNo, name, balance);
     System.out.println("Account Created!");
     }
+
+    static Account1 findAccount(int accNo) {
+    for (int i = 0; i < count; i++) {
+        if (accounts[i].getAccNo() == accNo) {
+            return accounts[i];
+        }
+    }
+    return null;
+    }
     public static void main(String[] args) {
         
     }
