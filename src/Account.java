@@ -30,6 +30,17 @@ public class Account {
     }
     }
 
+    void withdraw(double amount) {
+    if (amount <= 0) {
+        System.out.println("Invalid amount!");
+    } else if (amount > balance) {
+        System.out.println("Insufficient balance!");
+    } else {
+        balance -= amount;
+        System.out.println("Withdrawn: " + amount);
+    }
+    }
+
     
     public static void main(String[] args) {
         
