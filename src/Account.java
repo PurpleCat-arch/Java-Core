@@ -41,6 +41,17 @@ public class Account {
     }
     }
 
+    String history = "";
+
+    void addTransaction(String record) {
+        history += record + "\n";
+    }
+
+    void showHistory() {
+        System.out.println("Transaction History:");
+        System.out.println(history);
+    }
+
     
     public static void main(String[] args) {
         
