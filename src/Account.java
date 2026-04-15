@@ -92,6 +92,37 @@ public  class Account{
     }
     return null;
     }
+
+    static void depositMoney(Scanner sc) {
+    System.out.print("Enter Account No: ");
+    int accNo = sc.nextInt();
+
+    Account1 acc = findAccount(accNo);
+    if (acc != null) {
+        System.out.print("Enter amount: ");
+        double amt = sc.nextDouble();
+        acc.deposit(amt);
+        acc.addTransaction("Deposited: " + amt);
+    } else {
+        System.out.println("Account not found!");
+    }
+    }
+
+    static void withdrawMoney(Scanner sc) {
+            System.out.print("Enter Account No: ");
+    int accNo = sc.nextInt();
+
+    Account1 acc = findAccount(accNo);
+    if (acc != null) {
+        System.out.print("Enter amount: ");
+        double amt = sc.nextDouble();
+        acc.withdraw(amt);
+        acc.addTransaction("Withdrawn: " + amt);
+    } else {
+        System.out.println("Account not found!");
+    }
+    }
+    
     public static void main(String[] args) {
         
     }
