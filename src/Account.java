@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 class Account1 {
-    private int accNo;
-    private String name;
+    private final int accNo;
+    private final String name;
     private double balance;
 
     Account1(int accNo, String name, double balance) {
@@ -13,10 +13,6 @@ class Account1 {
 
     int getAccNo() {
         return accNo;
-    }
-
-    String getName() {
-        return name;
     }
 
     double getBalance() {
@@ -135,8 +131,30 @@ public  class Account{
         System.out.println("Account not found!");
     }
     }
-    
+
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
+
+    while (true) {
+        System.out.println("\n1.Create 2.Deposit 3.Withdraw 4.Balance 5.Details 6.Exit");
+        int ch = sc.nextInt();
+
+        switch (ch) {
+            case 1 -> createAccount(sc);
+            case 2 -> depositMoney(sc);
+            case 3 -> withdrawMoney(sc);
+            case 4 -> checkBalance(sc);
+            case 5 -> {
+                System.out.print("Enter Account No: ");
+                Account1 acc = findAccount(sc.nextInt());
+                if (acc != null) acc.display();
+                else System.out.println("Not found");
+                }
+            case 6 -> {
+                return;
+                }
+            default -> System.out.println("Invalid choice!");
+        }
     }
+}
 }
