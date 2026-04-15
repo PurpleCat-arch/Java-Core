@@ -1,9 +1,9 @@
-public class Account {
+class Account1 {
     private int accNo;
     private String name;
     private double balance;
 
-    Account(int accNo, String name, double balance) {
+    Account1(int accNo, String name, double balance) {
     this.accNo = accNo;
     this.name = name;
     this.balance = balance;
@@ -57,8 +57,10 @@ public class Account {
     System.out.println("Name: " + name);
     System.out.println("Balance: " + balance);
     }
-
-    
+}
+public  class Account{
+    static Account[] accounts = new Account[100];
+    static int count = 0;
     public static void main(String[] args) {
         
     }
