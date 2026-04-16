@@ -27,7 +27,12 @@ class Book{
         System.out.println("Book was not issued.");
     }
     }
-    
+
+    void display() {
+    System.out.println("ID: " + id + ", Name: " + name +
+            ", Status: " + (isIssued ? "Issued" : "Available"));
+    }
+
 }
 
 public class LibrarySystem {
