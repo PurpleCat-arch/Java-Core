@@ -19,6 +19,14 @@ class Book{
     }
     }
 
+    void returnBook() {
+    if (isIssued) {
+        isIssued = false;
+        System.out.println("Book returned successfully.");
+    } else {
+        System.out.println("Book was not issued.");
+    }
+    }
     
 }
 
