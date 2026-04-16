@@ -35,6 +35,7 @@ class Book{
 
 }
 
+@SuppressWarnings("unused")
 class User{
     int userId;
     String userName;
@@ -113,8 +114,32 @@ public class LibrarySystem {
     }
     }
 
-    
-    public static void main(String[] args){
 
+    public static void main(String[] args){
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+
+    while (true) {
+        System.out.println("\n1.Add Book 2.Available 3.Issue 4.Return 5.Search 6.Issued 7.Exit");
+        int ch = sc.nextInt();
+
+        switch (ch) {
+            case 1 -> addBook(sc);
+            case 2 -> displayAvailableBooks();
+            case 3 -> issueBook(sc);
+            case 4 -> returnBook(sc);
+            case 5 -> {
+                sc.nextLine();
+                System.out.print("Enter Book Name: ");
+                Book b = searchBook(sc.nextLine());
+                if (b != null) b.display();
+                else System.out.println("Not found");
+                }
+            case 6 -> showIssuedBooks();
+            case 7 -> {
+                return;
+                }
+            default -> System.out.println("Invalid choice!");
+        }
     }
+}
 }
