@@ -79,6 +79,19 @@ public class LibrarySystem {
     return null;
     }
 
+    static void issueBook(java.util.Scanner sc) {
+    sc.nextLine();
+    System.out.print("Enter Book Name: ");
+    String name = sc.nextLine();
+
+    Book book = searchBook(name);
+    if (book != null) {
+        book.issueBook();
+    } else {
+        System.out.println("Book not found!");
+    }
+    }
+
     
     public static void main(String[] args){
 
