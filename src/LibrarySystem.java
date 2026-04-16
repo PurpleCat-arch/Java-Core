@@ -92,6 +92,27 @@ public class LibrarySystem {
     }
     }
 
+    static void returnBook(java.util.Scanner sc) {
+    sc.nextLine();
+    System.out.print("Enter Book Name: ");
+    String name = sc.nextLine();
+
+    Book book = searchBook(name);
+    if (book != null) {
+        book.returnBook();
+    } else {
+        System.out.println("Book not found!");
+    }
+    }
+
+    static void showIssuedBooks() {
+    for (int i = 0; i < count; i++) {
+        if (books[i].isIssued) {
+            books[i].display();
+        }
+    }
+    }
+
     
     public static void main(String[] args){
 
