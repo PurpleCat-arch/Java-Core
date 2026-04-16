@@ -35,6 +35,16 @@ class Book{
 
 }
 
+class User{
+    int userId;
+    String userName;
+
+    User(int userId, String userName) {
+        this.userId = userId;
+        this.userName = userName;
+    }
+}
+
 public class LibrarySystem {
     public static void main(String[] args){
 
