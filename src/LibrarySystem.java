@@ -60,6 +60,26 @@ public class LibrarySystem {
     books[count++] = new Book(id, name);
     System.out.println("Book added!");
     }
+
+    static void displayAvailableBooks() {
+    for (int i = 0; i < count; i++) {
+        if (!books[i].isIssued) {
+            books[i].display();
+        }
+    }
+
+    }
+
+    static Book searchBook(String name) {
+    for (int i = 0; i < count; i++) {
+        if (books[i].name.equalsIgnoreCase(name)) {
+            return books[i];
+        }
+    }
+    return null;
+    }
+
+    
     public static void main(String[] args){
 
     }
