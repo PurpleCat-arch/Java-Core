@@ -48,6 +48,18 @@ class User{
 public class LibrarySystem {
     static Book[] books = new Book[100];
     static int count = 0;
+
+    static void addBook(java.util.Scanner sc) {
+    System.out.print("Enter Book ID: ");
+    int id = sc.nextInt();
+    sc.nextLine();
+
+    System.out.print("Enter Book Name: ");
+    String name = sc.nextLine();
+
+    books[count++] = new Book(id, name);
+    System.out.println("Book added!");
+    }
     public static void main(String[] args){
 
     }
