@@ -82,6 +82,14 @@ public class ShoppingCart {
     }
     }
 
+    static double calculateTotal() {
+    double total = 0;
+    for (int i = 0; i < count; i++) {
+        total += cart[i].price;
+    }
+    return total;
+    }
+
     
     public static void main(String[] args){
 
