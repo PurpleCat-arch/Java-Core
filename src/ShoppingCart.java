@@ -30,6 +30,10 @@ class User {
 
 
 public class ShoppingCart {
+
+    static Product[] cart = new Product[100];
+    static int count = 0;
+    
     public static void main(String[] args){
 
     }
