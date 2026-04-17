@@ -70,6 +70,19 @@ public class ShoppingCart {
     }
     System.out.println("Product not found!");
     }
+
+    static void viewCart() {
+    if (count == 0) {
+        System.out.println("Cart is empty!");
+        return;
+    }
+
+    for (int i = 0; i < count; i++) {
+        cart[i].display();
+    }
+    }
+
+    
     public static void main(String[] args){
 
     }
