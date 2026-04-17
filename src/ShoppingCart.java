@@ -90,6 +90,13 @@ public class ShoppingCart {
     return total;
     }
 
+    static double applyDiscount(double total) {
+    if (total > 1000) {
+        System.out.println("10% Discount Applied!");
+        return total * 0.9;
+    }
+    return total;
+    }
     
     public static void main(String[] args){
 
