@@ -21,10 +21,6 @@ class User {
     int userId;
     String userName;
 
-    User(int userId, String userName) {
-        this.userId = userId;
-        this.userName = userName;
-    }
 }
 
 
@@ -108,6 +104,23 @@ public class ShoppingCart {
 
 
     public static void main(String[] args){
+        java.util.Scanner sc = new java.util.Scanner(System.in);
 
+    while (true) {
+        System.out.println("\n1.Add 2.Remove 3.View 4.Total 5.Bill 6.Exit");
+        int ch = sc.nextInt();
+
+        switch (ch) {
+            case 1 -> addProduct(sc);
+            case 2 -> removeProduct(sc);
+            case 3 -> viewCart();
+            case 4 -> System.out.println("Total: " + calculateTotal());
+            case 5 -> displayBill();
+            case 6 -> {
+                return;
+                }
+            default -> System.out.println("Invalid choice!");
+        }
+    }
     }
 }
