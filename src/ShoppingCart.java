@@ -97,7 +97,16 @@ public class ShoppingCart {
     }
     return total;
     }
-    
+
+    static void displayBill() {
+    double total = calculateTotal();
+    double finalAmount = applyDiscount(total);
+
+    System.out.println("Total Price: " + total);
+    System.out.println("Final Price: " + finalAmount);
+    }
+
+
     public static void main(String[] args){
 
     }
