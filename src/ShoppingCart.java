@@ -17,6 +17,17 @@ class Product {
 
 }
 
+class User {
+    int userId;
+    String userName;
+
+    User(int userId, String userName) {
+        this.userId = userId;
+        this.userName = userName;
+    }
+}
+
+
 
 public class ShoppingCart {
     public static void main(String[] args){
