@@ -11,7 +11,9 @@ class Product {
         this.price = price;
     }
 
-    
+    void display() {
+        System.out.println("ID: " + id + ", Name: " + name + ", Price: " + price);
+    }    
 
 }
 
