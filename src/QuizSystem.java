@@ -39,6 +39,21 @@ class QuizSystem{
         new String[]{"Object Oriented Programming", "Only One Program", "Open Office Project", "None"}, 1);
     }
 
+    static void takeQuiz(java.util.Scanner sc) {
+    score = 0;
+
+    for (int i = 0; i < count; i++) {
+        questions[i].display();
+
+        System.out.print("Your answer: ");
+        int ans = sc.nextInt();
+
+        if (ans == questions[i].correctAnswer) {
+            score++;
+        }
+    }
+    }
+
     
     public static void main(String[] args){
 
