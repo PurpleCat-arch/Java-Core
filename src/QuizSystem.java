@@ -5,22 +5,22 @@ class Question{
     String[] options;
     int correctAnswer;
 
-    Question(String queston, String[] options,int correctAnswers){
+    Question(String question, String[] options,int correctAnswers){
         this.question=question;
         this.options=options;
-        this.correctAnswer=correctAnswer;
+        this.correctAnswer=correctAnswers;
 
     }
 
     void display(){
         System.out.println(question);
-        for(int i=0;i<=options.length;i++){
+        for(int i=0;i<options.length;i++){
             System.out.println((i+1)+". "+options[i]);
         }
     }
 }
 
-class QuizSystem{
+public class QuizSystem{
     static Question[] questions = new Question[10];
     static int count = 0;
     static int score = 0;
@@ -77,8 +77,32 @@ class QuizSystem{
     showResult();
     }
 
-    
-    public static void main(String[] args){
 
+    public static void main(String[] args){
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+
+    addQuestions();
+
+    System.out.print("Enter your name: ");
+    sc.nextLine();
+
+    while (true) {
+        System.out.println("\n1.Start Quiz 2.Result 3.Restart 4.Exit");
+        int ch = sc.nextInt();
+
+        switch (ch) {
+            case 1 -> {
+                startTimer();
+                takeQuiz(sc);
+                }
+            case 2 -> showResult();
+            case 3 -> restartQuiz(sc);
+            case 4 -> {
+                System.out.println("Bye!");
+                return;
+                }
+            default -> System.out.println("Invalid choice!");
+        }
     }
+}
 }
