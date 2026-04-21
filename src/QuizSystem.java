@@ -54,6 +54,15 @@ class QuizSystem{
     }
     }
 
+    static void startTimer() {
+    long start = System.currentTimeMillis();
+
+    System.out.println("Quiz started...");
+
+    long end = System.currentTimeMillis();
+    System.out.println("Time taken: " + (end - start)/1000 + " seconds");
+    }
+
     
     public static void main(String[] args){
 
