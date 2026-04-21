@@ -24,6 +24,22 @@ class QuizSystem{
     static Question[] questions = new Question[10];
     static int count = 0;
     static int score = 0;
+
+    static void addQuestions() {
+    questions[count++] = new Question(
+        "Java is?",
+        new String[]{"Language", "Car", "Food", "Game"}, 1);
+
+    questions[count++] = new Question(
+        "2 + 2 = ?",
+        new String[]{"3", "4", "5", "6"}, 2);
+
+    questions[count++] = new Question(
+        "OOP stands for?",
+        new String[]{"Object Oriented Programming", "Only One Program", "Open Office Project", "None"}, 1);
+    }
+
+    
     public static void main(String[] args){
 
     }
