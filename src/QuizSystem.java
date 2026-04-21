@@ -71,6 +71,12 @@ class QuizSystem{
     else System.out.println("Try Again!");
     }
 
+    static void restartQuiz(java.util.Scanner sc) {
+    System.out.println("Restarting Quiz...");
+    takeQuiz(sc);
+    showResult();
+    }
+
     
     public static void main(String[] args){
 
