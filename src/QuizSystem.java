@@ -63,6 +63,14 @@ class QuizSystem{
     System.out.println("Time taken: " + (end - start)/1000 + " seconds");
     }
 
+    static void showResult() {
+    System.out.println("Your Score: " + score + "/" + count);
+
+    if (score == count) System.out.println("Excellent!");
+    else if (score >= count / 2) System.out.println("Good Job!");
+    else System.out.println("Try Again!");
+    }
+
     
     public static void main(String[] args){
 
