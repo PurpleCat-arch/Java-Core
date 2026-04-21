@@ -19,7 +19,11 @@ class Question{
         }
     }
 }
-public class QuizSystem{
+
+class QuizSystem{
+    static Question[] questions = new Question[10];
+    static int count = 0;
+    static int score = 0;
     public static void main(String[] args){
 
     }
