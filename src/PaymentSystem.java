@@ -38,6 +38,12 @@ class UPI implements Payment {
     }
 }
 
+class Wallet implements Payment {
+    public void pay(double amount) {
+        System.out.println("Paid " + amount + " using Wallet");
+    }
+}
+
 public class PaymentSystem {
     public static void main(String[] args){
 
