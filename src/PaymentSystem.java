@@ -27,6 +27,14 @@ class User extends Account {
 
 }
 
+class CreditCard implements Payment {
+    public void pay(double amount) {
+        System.out.println("Paid " + amount + " using Credit Card");
+    }
+}
+
+
+
 public class PaymentSystem {
     public static void main(String[] args){
 
