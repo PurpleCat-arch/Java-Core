@@ -24,7 +24,6 @@ class User extends Account {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-
 }
 
 class CreditCard implements Payment {
@@ -33,7 +32,11 @@ class CreditCard implements Payment {
     }
 }
 
-
+class UPI implements Payment {
+    public void pay(double amount) {
+        System.out.println("Paid " + amount + " using UPI");
+    }
+}
 
 public class PaymentSystem {
     public static void main(String[] args){
