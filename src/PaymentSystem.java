@@ -110,7 +110,12 @@ public class PaymentSystem {
     p.pay(amt); // POLYMORPHISM
     }
 
-    
+    static void displayUsers() {
+    for (int i = 0; i < count; i++) {
+        users[i].display();
+    }
+    }
+
 
     public static void main(String[] args){
 
