@@ -11,7 +11,12 @@ abstract class Account {
         this.name=name;
     }
 
+    @SuppressWarnings("unused")
     abstract void display();
+
+    public String getName() {
+        return name;
+    }
 }
 
 class User extends Account {
@@ -27,18 +32,21 @@ class User extends Account {
 }
 
 class CreditCard implements Payment {
+    @Override
     public void pay(double amount) {
         System.out.println("Paid " + amount + " using Credit Card");
     }
 }
 
 class UPI implements Payment {
+    @Override
     public void pay(double amount) {
         System.out.println("Paid " + amount + " using UPI");
     }
 }
 
 class Wallet implements Payment {
+    @Override
     public void pay(double amount) {
         System.out.println("Paid " + amount + " using Wallet");
     }
@@ -99,12 +107,13 @@ public class PaymentSystem {
     Payment p;
 
     switch (choice) {
-        case 1: p = new CreditCard(); break;
-        case 2: p = new UPI(); break;
-        case 3: p = new Wallet(); break;
-        default:
+        case 1 -> p = new CreditCard();
+        case 2 -> p = new UPI();
+        case 3 -> p = new Wallet();
+        default -> {
             System.out.println("Invalid choice!");
             return;
+            }
     }
 
     p.pay(amt); // POLYMORPHISM
@@ -118,7 +127,22 @@ public class PaymentSystem {
 
 
     public static void main(String[] args){
+        java.util.Scanner sc = new java.util.Scanner(System.in);
 
+    while (true) {
+        System.out.println("\n1.Add User 2.Make Payment 3.Show Users 4.Exit");
+        int ch = sc.nextInt();
+
+        switch (ch) {
+            case 1 -> addUser(sc);
+            case 2 -> makePayment(sc);
+            case 3 -> displayUsers();
+            case 4 -> {
+                return;
+                }
+            default -> System.out.println("Invalid choice!");
+        }
+        }
     }
 }
 
