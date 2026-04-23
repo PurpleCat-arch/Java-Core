@@ -75,6 +75,43 @@ public class PaymentSystem {
     return null;
     }
 
+    static void makePayment(java.util.Scanner sc) {
+    System.out.print("Enter Account No: ");
+    int accNo = sc.nextInt();
+
+    User user = findUser(accNo);
+    if (user == null) {
+        System.out.println("User not found!");
+        return;
+    }
+
+    System.out.print("Enter Amount: ");
+    double amt = sc.nextDouble();
+
+    if (amt <= 0) {
+        System.out.println("Invalid amount!");
+        return;
+    }
+
+    System.out.println("1.CreditCard 2.UPI 3.Wallet");
+    int choice = sc.nextInt();
+
+    Payment p;
+
+    switch (choice) {
+        case 1: p = new CreditCard(); break;
+        case 2: p = new UPI(); break;
+        case 3: p = new Wallet(); break;
+        default:
+            System.out.println("Invalid choice!");
+            return;
+    }
+
+    p.pay(amt); // POLYMORPHISM
+    }
+
+    
+
     public static void main(String[] args){
 
     }
