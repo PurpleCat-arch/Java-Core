@@ -66,7 +66,14 @@ public class PaymentSystem {
     System.out.println("User added!");
     }
 
-    
+    static User findUser(int accNo) {
+    for (int i = 0; i < count; i++) {
+        if (users[i].accNo == accNo) {
+            return users[i];
+        }
+    }
+    return null;
+    }
 
     public static void main(String[] args){
 
