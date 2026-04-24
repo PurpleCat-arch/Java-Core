@@ -1,6 +1,6 @@
 public class Array3 {
     public static void main(String[] args) {
-        int[] arr = {5,7,8,3,2,1};
+        int[] arr = {30,50,56,87,86,78};
 
         int max = arr[0];
         int min = arr[0];
