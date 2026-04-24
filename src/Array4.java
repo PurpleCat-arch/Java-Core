@@ -1,6 +1,6 @@
 public class Array4 {
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5,6,7,8,9,10};
+        int[] arr={14,78,87,76,84,93};
 
         int even=0;
         int odd=0;
