@@ -1,6 +1,6 @@
 public class Array2 {
     public static void main(String[] args) {
-        int[] arr = {10,20,30,40,50};
+        int[] arr = {1,2,3,4};
 
         int sum=0;
         for (int num:arr){
