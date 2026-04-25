@@ -41,7 +41,8 @@ public class ArrayListFundamentals {
         // 7. Get element at specific index
         System.out.println("\nElement at index 0: " + fruits.get(0));
 
-
+        // 8. Find size of list
+        System.out.println("\nSize of list: " + fruits.size());
     }
 }
 
