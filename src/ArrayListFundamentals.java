@@ -50,7 +50,9 @@ public class ArrayListFundamentals {
             System.out.println(fruit);
         }
 
-        
+        // 10. Clear the list
+        fruits.clear();
+        System.out.println("\nAfter clearing list: " + fruits);
     }
 }
 
