@@ -22,6 +22,12 @@ public class ArrayListFundamentals {
         fruits.remove(1); // Removes Banana
         System.out.println("\nAfter removing index 1: " + fruits);
 
+
+        // 4. Remove element by value
+        fruits.remove("Mango");
+        System.out.println("After removing Mango: " + fruits);
+
+        
     }
 }
 
