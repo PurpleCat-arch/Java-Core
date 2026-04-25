@@ -30,6 +30,17 @@ public class ArrayListFundamentals {
          // 5. Update element at index
         fruits.set(1, "Pineapple");
         System.out.println("\nAfter updating index 1: " + fruits);
+
+        // 6. Check if element exists
+        if (fruits.contains("Apple")) {
+            System.out.println("\nApple is present in the list");
+        } else {
+            System.out.println("\nApple is not present");
+        }
+
+
+
+
     }
 }
 
