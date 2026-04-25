@@ -38,7 +38,8 @@ public class ArrayListFundamentals {
             System.out.println("\nApple is not present");
         }
 
-
+        // 7. Get element at specific index
+        System.out.println("\nElement at index 0: " + fruits.get(0));
 
 
     }
