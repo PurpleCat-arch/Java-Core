@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ArrayListFundamentals {
     public static void main(String[] args) {
-        
+
         // 1. Create an ArrayList and add elements
         ArrayList<String> fruits = new ArrayList<>();
         fruits.add("Apple");
@@ -12,7 +12,14 @@ public class ArrayListFundamentals {
 
         System.out.println("Initial List: " + fruits);
 
+        // 2. Print all elements using loop
+        System.out.println("\nUsing for loop:");
+        for (int i = 0; i < fruits.size(); i++) {
+            System.out.println(fruits.get(i));
+        }
 
+
+        
     }
 }
 
