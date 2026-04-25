@@ -27,7 +27,9 @@ public class ArrayListFundamentals {
         fruits.remove("Mango");
         System.out.println("After removing Mango: " + fruits);
 
-        
+         // 5. Update element at index
+        fruits.set(1, "Pineapple");
+        System.out.println("\nAfter updating index 1: " + fruits);
     }
 }
 
