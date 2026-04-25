@@ -43,6 +43,14 @@ public class ArrayListFundamentals {
 
         // 8. Find size of list
         System.out.println("\nSize of list: " + fruits.size());
+
+        // 9. Iterate using for-each loop
+        System.out.println("\nUsing for-each loop:");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+
+        
     }
 }
 
