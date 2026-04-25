@@ -18,8 +18,10 @@ public class ArrayListFundamentals {
             System.out.println(fruits.get(i));
         }
 
+        // 3. Remove element by index
+        fruits.remove(1); // Removes Banana
+        System.out.println("\nAfter removing index 1: " + fruits);
 
-        
     }
 }
 
