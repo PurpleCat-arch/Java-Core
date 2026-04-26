@@ -43,6 +43,16 @@ public class ArrayListProblems {
         }
         System.out.println("\nReversed List: " + reversed);
 
-        
+        // 5. Count occurrences of element
+        int count = 0;
+        String target = "Rahul";
+        for (String name : students) {
+            if (name.equals(target)) {
+                count++;
+            }
+        }
+        System.out.println("\nOccurrences of Rahul: " + count);
+
+
     }
 }
