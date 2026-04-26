@@ -74,7 +74,13 @@ public class ArrayListProblems {
         list1.addAll(list2);
         System.out.println("\nMerged List: " + list1);
 
-
+        // 8. Find sum of all elements
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        System.out.println("\nSum of elements: " + sum);
         
+
     }
 }
