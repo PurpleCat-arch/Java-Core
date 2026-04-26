@@ -86,6 +86,13 @@ public class ArrayListProblems {
         ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(arr));
         System.out.println("\nArray to ArrayList: " + arrayList);
 
+        // 10. Convert ArrayList → array
+        Integer newArr[] = arrayList.toArray(new Integer[0]);
+        System.out.println("\nArrayList to Array:");
+        for (int i : newArr) {
+            System.out.print(i + " ");
+        }
+
         
 
     }
