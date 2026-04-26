@@ -53,6 +53,13 @@ public class ArrayListProblems {
         }
         System.out.println("\nOccurrences of Rahul: " + count);
 
-
+        // 6. Remove duplicates manually
+        ArrayList<String> unique = new ArrayList<>();
+        for (String name : students) {
+            if (!unique.contains(name)) {
+                unique.add(name);
+            }
+        }
+        System.out.println("\nAfter removing duplicates: " + unique);
     }
 }
