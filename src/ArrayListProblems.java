@@ -80,6 +80,12 @@ public class ArrayListProblems {
             sum += num;
         }
         System.out.println("\nSum of elements: " + sum);
+
+        // 9. Convert array → ArrayList
+        Integer arr[] = {100, 200, 300};
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(arr));
+        System.out.println("\nArray to ArrayList: " + arrayList);
+
         
 
     }
