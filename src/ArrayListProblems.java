@@ -27,6 +27,22 @@ public class ArrayListProblems {
         }
         System.out.println("\nLargest Element: " + max);
 
+        // 3. Find smallest element
+        int min = numbers.get(0);
+        for (int num : numbers) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        System.out.println("Smallest Element: " + min);
 
+        // 4. Reverse the list
+        ArrayList<Integer> reversed = new ArrayList<>();
+        for (int i = numbers.size() - 1; i >= 0; i--) {
+            reversed.add(numbers.get(i));
+        }
+        System.out.println("\nReversed List: " + reversed);
+
+        
     }
 }
