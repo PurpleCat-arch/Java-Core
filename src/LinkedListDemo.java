@@ -35,7 +35,15 @@ public class LinkedListDemo {
             System.out.println(it.next());
         }
 
-       
+        // 7. Search element in list
+        if (list.contains("B")) {
+            System.out.println("\nElement B found");
+        } else {
+            System.out.println("\nElement B not found");
+        }
+
+      
+      
 
        
 
