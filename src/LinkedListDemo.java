@@ -50,9 +50,26 @@ public class LinkedListDemo {
         ArrayList<String> arrayList = new ArrayList<>();
         LinkedList<String> linkedList = new LinkedList<>();
 
-       
+        // Adding elements
+        for (int i = 0; i < 5; i++) {
+            arrayList.add("A" + i);
+            linkedList.add("L" + i);
+        }
 
-        
+        System.out.println("\nArrayList: " + arrayList);
+        System.out.println("LinkedList: " + linkedList);
+
+        // Inserting at beginning (key difference)
+        arrayList.add(0, "Start");     // slower
+        linkedList.addFirst("Start");  // faster
+
+        System.out.println("\nAfter inserting at beginning:");
+        System.out.println("ArrayList: " + arrayList);
+        System.out.println("LinkedList: " + linkedList);
+
+        // 10. Convert LinkedList → ArrayList
+        ArrayList<String> converted = new ArrayList<>(list);
+        System.out.println("\nConverted to ArrayList: " + converted);
     }
 }
 
