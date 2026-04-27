@@ -42,7 +42,10 @@ public class LinkedListDemo {
             System.out.println("\nElement B not found");
         }
 
-      
+        // 8. Update element
+        list.set(1, "Z"); // replace index 1
+        System.out.println("\nAfter update: " + list);
+
       
 
        
