@@ -24,7 +24,14 @@ public class LinkedListDemo {
         list.removeLast();
         System.out.println("\nAfter removing first & last: " + list);
 
-    
+        // 5. Display list
+        System.out.println("\nDisplaying List:");
+        System.out.println(list);
+
+     
+
+       
+
         
     }
 }
