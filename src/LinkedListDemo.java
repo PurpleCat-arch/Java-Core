@@ -11,12 +11,17 @@ public class LinkedListDemo {
 
         System.out.println("Initial List: " + list);
 
-
+       // 2. Add element at beginning
+        list.addFirst("Start");
+        System.out.println("\nAfter addFirst: " + list);
 
        
+
+    
+        
+    }
+}
 
         
 
        
-    }
-}
