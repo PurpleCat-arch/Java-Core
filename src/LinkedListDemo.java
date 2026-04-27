@@ -28,7 +28,14 @@ public class LinkedListDemo {
         System.out.println("\nDisplaying List:");
         System.out.println(list);
 
-     
+        // 6. Iterate using iterator
+        System.out.println("\nUsing Iterator:");
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+
+       
 
        
 
