@@ -46,7 +46,9 @@ public class LinkedListDemo {
         list.set(1, "Z"); // replace index 1
         System.out.println("\nAfter update: " + list);
 
-      
+        // 9. Compare ArrayList vs LinkedList (code demo)
+        ArrayList<String> arrayList = new ArrayList<>();
+        LinkedList<String> linkedList = new LinkedList<>();
 
        
 
