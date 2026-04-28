@@ -14,7 +14,10 @@ public class LinkedListFullDemo {
         list.addFirst("Start");
         System.out.println("\nAfter addFirst(): " + list);
 
-        
+        // 3. Add element at end
+        list.addLast("End");
+        System.out.println("After addLast(): " + list);
+
        
 
 
