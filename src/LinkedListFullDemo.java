@@ -34,7 +34,16 @@ public class LinkedListFullDemo {
             System.out.println(it.next());
         }
 
+        // 7. Search element in list
+        String search = "Banana";
+        if (list.contains(search)) {
+            System.out.println("\n" + search + " found in list");
+        } else {
+            System.out.println("\n" + search + " not found");
+        }
+
         
+
         
 
         
