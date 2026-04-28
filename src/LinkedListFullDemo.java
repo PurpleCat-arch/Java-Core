@@ -42,7 +42,9 @@ public class LinkedListFullDemo {
             System.out.println("\n" + search + " not found");
         }
 
-        
+        // 8. Update element
+        list.set(1, "Orange"); // replace element at index 1
+        System.out.println("\nAfter updating index 1: " + list);
 
         
 
