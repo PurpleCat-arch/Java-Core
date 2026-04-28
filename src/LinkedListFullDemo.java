@@ -46,7 +46,21 @@ public class LinkedListFullDemo {
         list.set(1, "Orange"); // replace element at index 1
         System.out.println("\nAfter updating index 1: " + list);
 
-        
+        // 9. Compare ArrayList vs LinkedList (code demo)
+        ArrayList<String> arrayList = new ArrayList<>();
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        for (int i = 1; i <= 5; i++) {
+            arrayList.add("A" + i);
+            linkedList.add("L" + i);
+        }
+
+        // Insert at beginning
+        arrayList.add(0, "Start");     // slower
+        linkedList.addFirst("Start");  // faster
+
+        System.out.println("\nArrayList: " + arrayList);
+        System.out.println("LinkedList: " + linkedList);
 
         
     }
