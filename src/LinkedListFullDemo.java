@@ -18,7 +18,10 @@ public class LinkedListFullDemo {
         list.addLast("End");
         System.out.println("After addLast(): " + list);
 
-       
+        // 4. Remove first and last element
+        list.removeFirst();
+        list.removeLast();
+        System.out.println("\nAfter removing first & last: " + list);
 
 
         
