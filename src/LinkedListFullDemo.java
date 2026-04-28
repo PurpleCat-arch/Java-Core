@@ -62,6 +62,8 @@ public class LinkedListFullDemo {
         System.out.println("\nArrayList: " + arrayList);
         System.out.println("LinkedList: " + linkedList);
 
-        
+        // 10. Convert LinkedList → ArrayList
+        ArrayList<String> converted = new ArrayList<>(list);
+        System.out.println("\nConverted LinkedList to ArrayList: " + converted);
     }
 }
