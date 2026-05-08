@@ -1,1 +1,18 @@
-import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class ArrayListSorting {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        list.add(50);\n        list.add(10);\n        list.add(30);\n        list.add(20);\n\n        System.out.println(\"Before sorting: \" + list);\n        Collections.sort(list);\n        System.out.println(\"After sorting: \" + list);\n        Collections.sort(list, Collections.reverseOrder());\n        System.out.println(\"Reverse order: \" + list);\n    }\n}\n
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListSorting {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(50);
+        list.add(10);
+        list.add(30);
+        list.add(20);
+
+        System.out.println("Before sorting: " + list);
+        Collections.sort(list);
+        System.out.println("After sorting: " + list);
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("Reverse order: " + list);
+    }
+}
