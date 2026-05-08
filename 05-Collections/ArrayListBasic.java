@@ -1,1 +1,12 @@
-import java.util.ArrayList;\n\npublic class ArrayListBasic {\n    public static void main(String[] args) {\n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"Apple\");\n        list.add(\"Banana\");\n        list.add(\"Cherry\");\n        System.out.println(\"ArrayList: \" + list);\n        System.out.println(\"Element at index 1: \" + list.get(1));\n    }\n}\n
+import java.util.ArrayList;
+
+public class ArrayListBasic {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        System.out.println("ArrayList: " + list);
+        System.out.println("Element at index 1: " + list.get(1));
+    }
+}
