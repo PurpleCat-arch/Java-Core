@@ -1,1 +1,14 @@
-import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class CollectionsClassUtility {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n        list.add(10); list.add(5); list.add(20);\n        \n        System.out.println(\"Max: \" + Collections.max(list));\n        System.out.println(\"Min: \" + Collections.min(list));\n        Collections.reverse(list);\n        System.out.println(\"Reversed: \" + list);\n    }\n}\n
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class CollectionsClassUtility {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(10); list.add(5); list.add(20);
+        
+        System.out.println("Max: " + Collections.max(list));
+        System.out.println("Min: " + Collections.min(list));
+        Collections.reverse(list);
+        System.out.println("Reversed: " + list);
+    }
+}
