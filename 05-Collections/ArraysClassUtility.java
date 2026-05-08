@@ -1,1 +1,12 @@
-import java.util.Arrays;\nimport java.util.List;\n\npublic class ArraysClassUtility {\n    public static void main(String[] args) {\n        String[] arr = {\"A\", \"B\", \"C\"};\n        List<String> list = Arrays.asList(arr);\n        \n        System.out.println(\"List from Array: \" + list);\n        // list.add(\"D\"); // Throws UnsupportedOperationException, size is fixed\n    }\n}\n
+import java.util.Arrays;
+import java.util.List;
+
+public class ArraysClassUtility {
+    public static void main(String[] args) {
+        String[] arr = {"A", "B", "C"};
+        List<String> list = Arrays.asList(arr);
+        
+        System.out.println("List from Array: " + list);
+        // list.add("D"); // Throws UnsupportedOperationException, size is fixed
+    }
+}
