@@ -1,1 +1,27 @@
-import java.util.ArrayList;\nimport java.util.Iterator;\n\npublic class ArrayListIteration {\n    public static void main(String[] args) {\n        ArrayList<String> colors = new ArrayList<>();\n        colors.add(\"Red\");\n        colors.add(\"Green\");\n        colors.add(\"Blue\");\n\n        System.out.println(\"For loop:\");\n        for (int i = 0; i < colors.size(); i++) {\n            System.out.println(colors.get(i));\n        }\n\n        System.out.println(\"Enhanced for loop:\");\n        for (String color : colors) {\n            System.out.println(color);\n        }\n\n        System.out.println(\"Iterator:\");\n        Iterator<String> it = colors.iterator();\n        while (it.hasNext()) {\n            System.out.println(it.next());\n        }\n    }\n}\n
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayListIteration {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+
+        System.out.println("For loop:");
+        for (int i = 0; i < colors.size(); i++) {
+            System.out.println(colors.get(i));
+        }
+
+        System.out.println("Enhanced for loop:");
+        for (String color : colors) {
+            System.out.println(color);
+        }
+
+        System.out.println("Iterator:");
+        Iterator<String> it = colors.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+    }
+}
