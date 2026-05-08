@@ -1,1 +1,17 @@
-import java.util.ArrayList;\n\npublic class ArrayListMethods {\n    public static void main(String[] args) {\n        ArrayList<Integer> numbers = new ArrayList<>();\n        numbers.add(10);\n        numbers.add(20);\n        numbers.add(30);\n        \n        System.out.println(\"Contains 20? \" + numbers.contains(20));\n        numbers.remove(Integer.valueOf(20));\n        System.out.println(\"After removal: \" + numbers);\n        System.out.println(\"Size: \" + numbers.size());\n        numbers.clear();\n        System.out.println(\"Is empty? \" + numbers.isEmpty());\n    }\n}\n
+import java.util.ArrayList;
+
+public class ArrayListMethods {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        
+        System.out.println("Contains 20? " + numbers.contains(20));
+        numbers.remove(Integer.valueOf(20));
+        System.out.println("After removal: " + numbers);
+        System.out.println("Size: " + numbers.size());
+        numbers.clear();
+        System.out.println("Is empty? " + numbers.isEmpty());
+    }
+}
