@@ -1,1 +1,26 @@
-import java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.Comparator;\n\nclass Employee {\n    String name;\n    Employee(String name) { this.name = name; }\n    public String toString() { return name; }\n}\n\npublic class ComparatorDemo {\n    public static void main(String[] args) {\n        ArrayList<Employee> emps = new ArrayList<>();\n        emps.add(new Employee(\"Charlie\"));\n        emps.add(new Employee(\"Alice\"));\n        emps.add(new Employee(\"Bob\"));\n        \n        Collections.sort(emps, new Comparator<Employee>() {\n            public int compare(Employee e1, Employee e2) {\n                return e1.name.compareTo(e2.name);\n            }\n        });\n        \n        System.out.println(\"Sorted Employees by Name: \" + emps);\n    }\n}\n
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+class Employee {
+    String name;
+    Employee(String name) { this.name = name; }
+    public String toString() { return name; }
+}
+
+public class ComparatorDemo {
+    public static void main(String[] args) {
+        ArrayList<Employee> emps = new ArrayList<>();
+        emps.add(new Employee("Charlie"));
+        emps.add(new Employee("Alice"));
+        emps.add(new Employee("Bob"));
+        
+        Collections.sort(emps, new Comparator<Employee>() {
+            public int compare(Employee e1, Employee e2) {
+                return e1.name.compareTo(e2.name);
+            }
+        });
+        
+        System.out.println("Sorted Employees by Name: " + emps);
+    }
+}
