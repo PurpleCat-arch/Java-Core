@@ -1,1 +1,18 @@
-import java.util.concurrent.CopyOnWriteArrayList;\nimport java.util.Iterator;\n\npublic class CopyOnWriteArrayListBasic {\n    public static void main(String[] args) {\n        CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();\n        list.add(\"A\");\n        list.add(\"B\");\n        \n        Iterator<String> it = list.iterator();\n        list.add(\"C\"); // Will not throw ConcurrentModificationException\n        \n        while(it.hasNext()){\n            System.out.println(\"Iterator reads: \" + it.next());\n        }\n        System.out.println(\"Actual list: \" + list);\n    }\n}\n
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.Iterator;
+
+public class CopyOnWriteArrayListBasic {
+    public static void main(String[] args) {
+        CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
+        list.add("A");
+        list.add("B");
+        
+        Iterator<String> it = list.iterator();
+        list.add("C"); // Will not throw ConcurrentModificationException
+        
+        while(it.hasNext()){
+            System.out.println("Iterator reads: " + it.next());
+        }
+        System.out.println("Actual list: " + list);
+    }
+}
