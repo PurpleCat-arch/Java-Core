@@ -1,1 +1,31 @@
-import java.util.ArrayList;\nimport java.util.Collections;\n\nclass Student implements Comparable<Student> {\n    int id;\n    String name;\n\n    Student(int id, String name) {\n        this.id = id;\n        this.name = name;\n    }\n\n    public int compareTo(Student other) {\n        return Integer.compare(this.id, other.id);\n    }\n\n    public String toString() {\n        return id + \"-\" + name;\n    }\n}\n\npublic class ComparableDemo {\n    public static void main(String[] args) {\n        ArrayList<Student> students = new ArrayList<>();\n        students.add(new Student(2, \"Bob\"));\n        students.add(new Student(1, \"Alice\"));\n        \n        Collections.sort(students);\n        System.out.println(\"Sorted Students by ID: \" + students);\n    }\n}\n
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Student implements Comparable<Student> {
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int compareTo(Student other) {
+        return Integer.compare(this.id, other.id);
+    }
+
+    public String toString() {
+        return id + "-" + name;
+    }
+}
+
+public class ComparableDemo {
+    public static void main(String[] args) {
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(new Student(2, "Bob"));
+        students.add(new Student(1, "Alice"));
+        
+        Collections.sort(students);
+        System.out.println("Sorted Students by ID: " + students);
+    }
+}
