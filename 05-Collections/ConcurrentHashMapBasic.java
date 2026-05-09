@@ -1,1 +1,14 @@
-import java.util.concurrent.ConcurrentHashMap;\n\npublic class ConcurrentHashMapBasic {\n    public static void main(String[] args) {\n        ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<>();\n        map.put(1, \"One\");\n        map.put(2, \"Two\");\n        \n        map.putIfAbsent(1, \"Uno\"); // Won't replace\n        map.putIfAbsent(3, \"Three\");\n        \n        System.out.println(\"ConcurrentHashMap: \" + map);\n    }\n}\n
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConcurrentHashMapBasic {
+    public static void main(String[] args) {
+        ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<>();
+        map.put(1, "One");
+        map.put(2, "Two");
+        
+        map.putIfAbsent(1, "Uno"); // Won't replace
+        map.putIfAbsent(3, "Three");
+        
+        System.out.println("ConcurrentHashMap: " + map);
+    }
+}
