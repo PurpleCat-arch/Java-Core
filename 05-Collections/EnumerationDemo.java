@@ -1,1 +1,15 @@
-import java.util.Vector;\nimport java.util.Enumeration;\n\npublic class EnumerationDemo {\n    public static void main(String[] args) {\n        Vector<String> vector = new Vector<>();\n        vector.add(\"One\");\n        vector.add(\"Two\");\n        \n        Enumeration<String> e = vector.elements();\n        while (e.hasMoreElements()) {\n            System.out.println(e.nextElement());\n        }\n    }\n}\n
+import java.util.Vector;
+import java.util.Enumeration;
+
+public class EnumerationDemo {
+    public static void main(String[] args) {
+        Vector<String> vector = new Vector<>();
+        vector.add("One");
+        vector.add("Two");
+        
+        Enumeration<String> e = vector.elements();
+        while (e.hasMoreElements()) {
+            System.out.println(e.nextElement());
+        }
+    }
+}
