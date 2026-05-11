@@ -15,7 +15,7 @@ The repository is structured logically based on Java concepts:
 *   📁 **[04-OOPs](./04-OOPs/)**
     *   Contains Object-Oriented Programming concepts: Classes, Objects, Constructors, Inheritance, Polymorphism, Encapsulation, Abstraction.
 *   📁 **[05-Collections](./05-Collections/)**
-    *   Contains Java Collections framework examples such as `ArrayList`s and `LinkedList`s.
+    *   Contains 35 Java Collections framework examples including `List`s, `Set`s, `Map`s, `Queue`s, and concurrent collections.
 *   📁 **[06-Exceptions](./06-Exceptions/)**
     *   Contains Exception handling programs and demonstrations.
 *   📁 **[07-Mini-Projects](./07-Mini-Projects/)**
