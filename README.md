@@ -17,7 +17,7 @@ The repository is structured logically based on Java concepts:
 *   📁 **[05-Collections](./05-Collections/)**
     *   Contains 35 Java Collections framework examples including `List`s, `Set`s, `Map`s, `Queue`s, and concurrent collections.
 *   📁 **[06-Exceptions](./06-Exceptions/)**
-    *   Contains Exception handling programs and demonstrations.
+    *   Contains 35 Java Exception handling programs covering `try-catch`, `throw`/`throws`, custom exceptions, checked vs unchecked, exception chaining, and advanced patterns.
 *   📁 **[07-Mini-Projects](./07-Mini-Projects/)**
     *   Contains larger structured programs demonstrating basic system design and the application of multiple concepts (e.g., Banking System, Quiz System).
 
